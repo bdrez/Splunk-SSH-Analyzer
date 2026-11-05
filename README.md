@@ -1,7 +1,7 @@
 # Splunk SSH Analyzer
 
 ## Project Overview
-I am working on improving my Splunk and cybersecurity skills. Through this project, I will analyze SSH authentication logs using Splunk Enterprise to investigate login activity and identify potentially suspicious behavior.
+I am working on improving my Splunk and cybersecurity skills. Through this project, I will analyze SSH authentication logs using Splunk Enterprise to investigate login activity and identify potentially suspicious behavior. This project follows the guide found here https://github.com/0xrajneesh/Splunk-Projects-For-Beginners/blob/main/project%234-analyzing-ssh-logs-using-splunk-siem.md .
 
 ## Objectives
 - Import and explore SSH log data.
