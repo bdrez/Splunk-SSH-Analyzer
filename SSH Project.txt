@@ -2,3 +2,6 @@
 
 Search for the SSH Events 
 source="ssh.log" host="DESKTOP-AE9G2EV" sourcetype="SSH logs"
+source -The file the event came from. 
+host -The computer associated with this event. Got to chose the computer name when i uploaded the source file.
+source type -The format of the event.
