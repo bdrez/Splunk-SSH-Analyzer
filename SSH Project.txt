@@ -2,6 +2,19 @@
 
 Search for the SSH Events 
 source="ssh.log" host="DESKTOP-AE9G2EV" sourcetype="SSH logs"
-source -The file the event came from. 
-host -The computer associated with this event. Got to chose the computer name when i uploaded the source file.
-source type -The format of the event.
+
+
+To get the source IP address we did:
+source="ssh.log"
+| rex field=_raw "^\S+\s+\S+\s+(?<src_ip>\d{1,3}(?:\.\d{1,3}){3})" |stats count by src_ip
+The top ip address with 2380 counts found: 
+src_ip = 192.168.202.141
+
+What our regex means:
+^ start at the beginning 
+\S+ skip the first column 
+\s+ skip the white spaces
+These are done twice
+() - capturing group 
+?<src_Ip>.. - what to name the capture group
+\d{1,3}(?:\.\d{1,3}){3} -get IP address in IPv4 form (quick and loose verision)
